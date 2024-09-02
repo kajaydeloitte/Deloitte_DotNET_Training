@@ -1,0 +1,48 @@
+<!-- Create a web page to perform Sum operation using  JavaScript -->
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+First Number :  
+<input type="text" id="t1"  />
+<br></br>
+Second Number :  
+<input type="text" id="t2"  />
+<br></br>
+<input type="button" onclick="f1(event)" value="Add"  />	 	
+<input type="button" onclick="f1(event)" value="Sub"  />	 	
+<input type="button" onclick="f1(event)" value="Multiply"  />	 	
+<input type="button" onclick="f1(event)" value="Division"  />	 	
+</br>
+<p id="p1"></p>
+
+<script>
+	function  f1()
+	{
+	 let frstObj = document.getElementById("t1");
+     let scndObj = document.getElementById("t2");
+     let paraObj=document.getElementById("p1");
+
+     let frst=frstObj.value;
+     let scnd=scndObj.value;
+
+     let operation=event.target.value;
+     let sum;
+     if(operation=="Add"){
+     sum=parseInt(frst)+parseInt(scnd);
+     }
+     else  if(operation=="Sub"){
+     sum=parseInt(frst)-parseInt(scnd);
+     }
+     else  if(operation=="Multiply"){
+     sum=parseInt(frst)*parseInt(scnd);
+     }
+     else  if(operation=="Division"){
+     sum=parseInt(frst)/parseInt(scnd);
+     }
+     paraObj.innerHTML="Result : "+sum;
+	 }
+</script>
+</body>
+</html>

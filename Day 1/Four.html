@@ -1,0 +1,42 @@
+<!-- Create a web page to perform Sum operation using  JavaScript -->
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+Employee Number :  
+<input type="text" id="t1"  />
+<br></br>
+EMployee Name :  
+<input type="text" id="t2"  />
+<br></br>
+Employee Job :  
+<input type="text" id="t3"  />
+<br></br>
+Employee Salary :  
+<input type="text" id="t4"  />
+<br></br>
+<input type="button" onclick="f1()"
+			value="Display"  />	 	
+ </br>
+<p id="p1"></p>
+
+<script>
+	function  f1()
+	{
+	 let frstObj = document.getElementById("t1");
+     let scndObj = document.getElementById("t2");
+     let thrdObj = document.getElementById("t3");
+     let forthObj = document.getElementById("t4");
+     let paraObj=document.getElementById("p1");
+
+     let frst=frstObj.value;
+     let scnd=scndObj.value;
+     let thrd=thrdObj.value;
+     let forth=forthObj.value;
+     console.log("Employee Number : "+frst+", Employee Name :"+scnd+", Employee Job : "+thrd+", Employee Salary : "+forth);
+     paraObj.innerHTML="Employee Number : "+frst+", Employee Name :"+scnd+", Employee Job : "+thrd+", Employee Salary : "+forth ;
+	 }
+</script>
+</body>
+</html>
