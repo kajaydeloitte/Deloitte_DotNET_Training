@@ -1,0 +1,48 @@
+New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you first-letters navigation
+<html>
+	<head>
+		<style> 
+			img
+			{
+				border: 1px solid gray;
+			} 
+		</style>
+	</head>
+	<body>
+		<h3>jQuery Programming -- Event Handling </h3>
+		<hr/> 
+		
+		<br/><br/>
+		<img class="small"  src="Images/Image1.jpg"  border="2"  width="80"  height="60"  />
+		<img class="small"  src="Images/Image2.jpg"  border="2"  width="80"  height="60"  />
+		<img class="small"  src="Images/Image3.jpg"  border="2"  width="80"  height="60"  />
+		<img class="small"  src="Images/Image4.jpg"  border="2"  width="80"  height="60"  />
+		 
+		<hr/>
+		<img   src="Images/Image1.jpg"  id="bigImg"  border="2"  width="340"  height="380"  />
+ 
+		
+			 
+				
+		<script src="https://code.jquery.com/jquery-3.7.1.js">        
+    	</script>
+
+		<script>
+			$(document).ready(  function(){ 
+				 
+				$(".small").mouseover(  function(){
+
+					// get the current small image src 
+					let str =  $(this).attr("src");
+
+					// update bigImg src
+					$("#bigImg").attr("src",str);
+				} );
+				
+			} );
+		</script>
+
+		 
+	 
+	</body>
+</html>

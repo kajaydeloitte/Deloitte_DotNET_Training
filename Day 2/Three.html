@@ -1,0 +1,33 @@
+<!-- Create a web page to perform Sum operation using  JavaScript -->
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+First Number :  
+<input type="text" id="t1"  />
+<br></br>
+Second Number :  
+<input type="text" id="t2"  />
+<br></br>
+<input type="button" onclick="f1()"
+			value="Sum"  />	 	
+ </br>
+<p id="p1"></p>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js">        
+    </script>
+
+<script>
+	function  f1()
+	{
+     let frst=$("#t1").val();
+     let scnd=$("#t2").val();
+     
+     let sum=parseInt(frst)+parseInt(scnd);
+     let s="Result : "+sum;
+     $("#p1").html(s);
+	 }
+</script>
+</body>
+</html>
